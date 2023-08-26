@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow {
+    text-shadow: 2px 2px 10px rgba(242, 238, 238, 0.936);
+  }
+/* Define the animation for the main text */
+@keyframes signalEffect {
+    0%, 100% {
+      color: #8fd28d; /* Red color */
+      /* transform: translateY(4); */
+    }
+    50% {
+      color: #ffffff; /* Black color */
+      transform: translateY(1); /* Move up a bit */
+      text-shadow: 2px 2px 10px rgba(242, 238, 238, 0.936);
+    }
+  }
+  
+  /* Define the animation for the shadow */
+  @keyframes shadowEffect {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0.15rem); /* Move down a bit */
+    }
+  }
+  
+
