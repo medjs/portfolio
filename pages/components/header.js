@@ -40,9 +40,7 @@ export default function Header ({ pathname }) {
           {pages.length && pages.map((res, i)=>(
             <Link key={i} href={res.target}>
               <li
-                className={`px-2 py-1 hover:${
-                  pathname === '/' ? ' bg-transparent' : 'bg-gray-100'
-                }`}
+                className={`px-2 py-1 hover:${pathname !== '/' && 'text-gray-400'}`}
               >
                 {res.name}
               </li>

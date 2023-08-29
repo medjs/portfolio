@@ -39,6 +39,7 @@
     background: #0f0f0f ;
     transform-origin: bottom;
     z-index: 100;
+    /* opacity: .7; */
 
   }
 
@@ -51,6 +52,7 @@
     background: #0f0f0f ;
     transform-origin: top;
     z-index: 100;
+    /* opacity: .7; */
 
   }
   
