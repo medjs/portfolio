@@ -8,7 +8,7 @@ export default function App ({ Component, pageProps }) {
 
   return (
     <AnimatePresence mode='wait'>
-      <motion.div key={pathname}>
+      <motion.div key={(pathname !== '/') && pathname}>
         <Header pathname={pathname} />
         <Component {...pageProps} />
         <motion.div
